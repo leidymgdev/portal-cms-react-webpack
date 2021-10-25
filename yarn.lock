@@ -1176,10 +1176,10 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@jcgalvis/vtex.livestreaming@^1.5.21":
-  version "1.5.21"
-  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.5.21.tgz#ac7854374e79641cd24d95d02dfbe08dd4a1fb35"
-  integrity sha512-u5OltbuelvHjSTEoHI7HHHyVRQt/oztMf3EHNojYjWOIeoSEEkpq9cFixe4BRYDVR9DfhLuxfmsRp114YUTmPA==
+"@jcgalvis/vtex.livestreaming@^1.5.27":
+  version "1.5.27"
+  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.5.27.tgz#26c1d71962f763f19ce6da907c4c311d76dc84ab"
+  integrity sha512-T/xaz0vZiUL9CLRuVtMfgG2bEJMKnnXGUACHT0M9QqkLETOXcsLq1z4S6Y2YzRaVbM4y8P+oay7H0VUbX2+o/A==
   dependencies:
     "@types/resize-observer-browser" "^0.1.6"
     "@vtex/css-handles" "^1.1.3"
