@@ -5,18 +5,19 @@ import "@jcgalvis/vtex.livestreaming/dist/index.css";
 const LivestreamingPortal = () => {
   return (
     <Livestreaming
-      idLivestreaming="__IDLIVESTREAMING"
       account="__ACCOUNT"
-      inactiveSidebarProducts="_INACTIVESIDEBARPRODUCTS"
-      inactiveProductsCarousel="_INACTIVEPRODUCTSCAROUSEL"
-      inactivateChat="_INACTIVATECHAT"
-      inactivateLike="_INACTIVATELIKE"
-      inactivateViewers="_INACTIVATEVIEWERS"
+      idLivestreaming="__IDLIVESTREAMING"
+      isInGlobalPage="_ISINGLOBALPAGE"
       isInfinite="_ISINFINITE"
-      time="_TIME"
-      pdp="_PDP"
-      originOfProducts="_ORIGINOFPRODUCTS"
       kuikpay="_KUIKPAY"
+      originOfProducts="_ORIGINOFPRODUCTS"
+      redirectTo="_PDP"
+      showChat="_INACTIVATECHAT"
+      showLike="_INACTIVATELIKE"
+      showProductsCarousel="_INACTIVEPRODUCTSCAROUSEL"
+      showSidebarProducts="_INACTIVESIDEBARPRODUCTS"
+      showViewers="_INACTIVATEVIEWERS"
+      time="_TIME"
     />
   );
 };
