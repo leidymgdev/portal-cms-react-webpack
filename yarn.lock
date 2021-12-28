@@ -1237,10 +1237,10 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@jcgalvis/vtex.livestreaming@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.1.tgz#9b7422dc9872ca221f919521837d5c1b3f4a9148"
-  integrity sha512-lxDzlR8RtS/91BJIr51SC48dJebwGZ9cDlhxhVDt8YKrZq1ZEvm1NZLfhtTY3pj1Xu8F82xy6HCe9/ilUpz9Yw==
+"@jcgalvis/vtex.livestreaming@^1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.5.tgz#4623e2220e2640e5c719a1c2d094e24212f39257"
+  integrity sha512-bHmRes7+4cGNG3ODuYWH/ih0V0E6GtwtoemxHgEfXV8sx7K4wTDmF+eFlWB4g1xaC0sZFzQHOPPlUIbsdiGX5g==
   dependencies:
     "@giphy/js-types" "^4.1.0"
     "@types/resize-observer-browser" "^0.1.6"
