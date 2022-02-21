@@ -1237,10 +1237,10 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@jcgalvis/vtex.livestreaming@1.6.58-beta":
-  version "1.6.58-beta"
-  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.58-beta.tgz#91ec4fd40aa534facaa4dc1089225038e546b803"
-  integrity sha512-fnZ+53bhxFa0i33dGov85m/XpHW+iSLqLy+wgdJWvMogFeqHx1WTf5q+wzHlF9EWos13S7tLAVhN5Ob6eQfPhQ==
+"@jcgalvis/vtex.livestreaming@1.6.59-beta":
+  version "1.6.59-beta"
+  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.59-beta.tgz#61224a50f29a02af70816177608886acbfcca0ae"
+  integrity sha512-A8oEjUACpLuBBm0IJpjMwg4bW/h3NLPRjMbPldZUIRHPHfiMVqdMtHoCnf3w0umk+kQSmT8UWaVr6M2gMKNDCQ==
   dependencies:
     "@giphy/js-types" "^4.1.0"
     "@types/canvas-confetti" "^1.4.2"
@@ -1250,7 +1250,7 @@
     caniuse-lite "^1.0.30001312"
     canvas-confetti "^1.5.1"
     gsap "^3.9.1"
-    kuikpay-sdk "0.0.81-dev.58"
+    kuikpay-sdk "0.0.81"
     react-giphy-searchbox "^1.5.4"
     react-intl "^5.21.2"
     react-transition-group "^4.4.2"
@@ -4403,10 +4403,10 @@ knot.js@^1.1.5:
   resolved "https://registry.yarnpkg.com/knot.js/-/knot.js-1.1.5.tgz#28e72522f703f50fe98812fde224dd72728fef5d"
   integrity sha1-KOclIvcD9Q/piBL94iTdcnKP710=
 
-kuikpay-sdk@0.0.81-dev.58:
-  version "0.0.81-dev.58"
-  resolved "https://registry.yarnpkg.com/kuikpay-sdk/-/kuikpay-sdk-0.0.81-dev.58.tgz#66ca6f5302d8451c87637c9c0057ab901303dca0"
-  integrity sha512-fzeH4i6J+aFSajawPrH5WZVtf3HUpb4nkVAykiEJ2Wn9acvwnJUPE03uyx3h56swdBlUJI9MnrVhQDn6nqT/Hw==
+kuikpay-sdk@0.0.81:
+  version "0.0.81"
+  resolved "https://registry.yarnpkg.com/kuikpay-sdk/-/kuikpay-sdk-0.0.81.tgz#414f53414f51dc62f36c6d68ccc773740b63f6d0"
+  integrity sha512-tan3YYpWyme1RN18+laphJ6KrBECNkMV5kOp4GseyebpzNXpsqAZGIXoivb/fq4cqOH2oY+Czx7KOn357hxnvQ==
   dependencies:
     "@apollo/client" "^3.3.21"
     "@formatjs/intl-datetimeformat" "^4.2.3"
