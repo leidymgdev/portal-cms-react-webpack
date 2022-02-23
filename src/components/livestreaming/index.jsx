@@ -88,6 +88,7 @@ const LivestreamingPortal = () => {
       isInGlobalPage="_ISINGLOBALPAGE"
       isInfinite="_ISINFINITE"
       kuikpay="_KUIKPAY"
+      originOfProducts="_ORIGINOFPRODUCTS"
       redirectTo="_PDP"
       showChat="_INACTIVATECHAT"
       showLike="_INACTIVATELIKE"
