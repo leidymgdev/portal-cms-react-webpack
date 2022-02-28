@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@jcgalvis/vtex.livestreaming": "^1.6.15",
+    "@jcgalvis/vtex.livestreaming": "1.6.73-beta",
     "@material/react-card": "^0.15.0",
     "react": "^17.0.1",
     "react-card-component": "0.0.1-beta.5.9.3",
