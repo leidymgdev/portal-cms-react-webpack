@@ -1237,10 +1237,10 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@jcgalvis/vtex.livestreaming@1.6.76-beta":
-  version "1.6.76-beta"
-  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.76-beta.tgz#f060f289b27f7c41b5a85ad8b315f11a0e6fb8fc"
-  integrity sha512-z+JBeB+yPoR7XJbInQ0br8r4EFrgrA189xd3EOhQi8RaWWBuRzw0cM2KW3cEzLKPPrjS5Oyia70aNZyTtJd9Xw==
+"@jcgalvis/vtex.livestreaming@1.6.79-beta":
+  version "1.6.79-beta"
+  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.79-beta.tgz#b5d85d8e39b3b4d1f5c6d82b6a9cfcb289e28205"
+  integrity sha512-x/L1CcE160//pNcjnFpPT7uMwD7fUTHtYu4ayVe7Z3HGwAn16kwfP+Q5pppxzhM3rdJSaNeoWXyy3gDCdju3Tw==
   dependencies:
     "@giphy/js-types" "^4.1.0"
     "@types/canvas-confetti" "^1.4.2"
