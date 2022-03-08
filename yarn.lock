@@ -1237,12 +1237,13 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@jcgalvis/vtex.livestreaming@1.6.79-beta":
-  version "1.6.79-beta"
-  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.79-beta.tgz#b5d85d8e39b3b4d1f5c6d82b6a9cfcb289e28205"
-  integrity sha512-x/L1CcE160//pNcjnFpPT7uMwD7fUTHtYu4ayVe7Z3HGwAn16kwfP+Q5pppxzhM3rdJSaNeoWXyy3gDCdju3Tw==
+"@jcgalvis/vtex.livestreaming@1.6.81-beta":
+  version "1.6.81-beta"
+  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.81-beta.tgz#284ddeeacf1a3cbbf0fe2d99662caba63cf03b17"
+  integrity sha512-zkAB91R5xadUTAQizgwGGOB6AMOLvQUaLgDnzUb+Qq1KPSvekY5QrD9gP2uyw1Mqg98nkWg2fSQBhOzSOB20eQ==
   dependencies:
     "@giphy/js-types" "^4.1.0"
+    "@lottiefiles/react-lottie-player" "^3.4.2"
     "@types/canvas-confetti" "^1.4.2"
     "@types/resize-observer-browser" "^0.1.6"
     "@vtex/css-handles" "^1.1.3"
@@ -1251,12 +1252,20 @@
     canvas-confetti "^1.5.1"
     gsap "^3.9.1"
     kuikpay-sdk "0.0.85-dev.1"
+    lodash.clonedeep "^4.5.0"
     react-giphy-searchbox "^1.5.4"
     react-intl "^5.21.2"
     react-transition-group "^4.4.2"
     tinycolor "^0.0.1"
     uuid "^8.3.2"
     vtex-tachyons "^3.2.2"
+
+"@lottiefiles/react-lottie-player@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@lottiefiles/react-lottie-player/-/react-lottie-player-3.4.2.tgz#ab3641dbb16a95db988748ea3a0b8025ef900042"
+  integrity sha512-UdrMXFVT7GWrZlxWCDxdNbo2Fzh7pygxdAY4JQh6Z9bNWXcvIEz4TZIYOq7pssjryAl+p2rurC2+C6p8bLLplg==
+  dependencies:
+    lottie-web "^5.7.8"
 
 "@material/animation@^1.0.0":
   version "1.0.0"
@@ -4467,6 +4476,11 @@ lodash-es@^4.17.15:
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
+lodash.clonedeep@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -4498,6 +4512,11 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+lottie-web@^5.7.8:
+  version "5.9.1"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.1.tgz#0090e575de74e49843606c1722767604e068f061"
+  integrity sha512-3uKtU6BhIK6ZRCE/QyiXq/KuRvPeEAz/VFwqd99jPbpgFY9gHLw2krqvcuCFGepeW94BipS/B3TqIfTc9pUeZg==
 
 lower-case@^2.0.2:
   version "2.0.2"
