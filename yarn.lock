@@ -1237,10 +1237,10 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@jcgalvis/vtex.livestreaming@1.6.81-beta":
-  version "1.6.81-beta"
-  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.81-beta.tgz#284ddeeacf1a3cbbf0fe2d99662caba63cf03b17"
-  integrity sha512-zkAB91R5xadUTAQizgwGGOB6AMOLvQUaLgDnzUb+Qq1KPSvekY5QrD9gP2uyw1Mqg98nkWg2fSQBhOzSOB20eQ==
+"@jcgalvis/vtex.livestreaming@1.6.82-beta":
+  version "1.6.82-beta"
+  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.82-beta.tgz#e6fbc3e21b1db3b6a7117d459f5cbe3cd2347842"
+  integrity sha512-M2ttzEze5rRQJo3UfxZ3R8PbIAGvVKn04RJyEsgq/Q3ZyjpNZvRf/u1/JLihI+6cNgAGff6ky2Zghv6SVmCTMQ==
   dependencies:
     "@giphy/js-types" "^4.1.0"
     "@lottiefiles/react-lottie-player" "^3.4.2"
@@ -1470,9 +1470,9 @@
   integrity sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==
 
 "@types/ramda@^0.27.60":
-  version "0.27.65"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.27.65.tgz#84c7ee47ffc27d7c9a3c0d431ae00aba54b9685b"
-  integrity sha512-JVX1qgW9xxKUraEbiftgrREtf8A2m+2IAl32oh9pHCrNj0nwPRnOhuvghn1ELTCjTq66slejsePafMXjbHpPAA==
+  version "0.27.66"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.27.66.tgz#f1a23d13b0087d806a62e3ff941e5e59b3318999"
+  integrity sha512-i2YW+E2U6NfMt3dp0RxNcejox+bxJUNDjB7BpYuRuoHIzv5juPHkJkNgcUOu+YSQEmaWu8cnAo/8r63C0NnuVA==
   dependencies:
     ts-toolbelt "^6.15.1"
 
@@ -2280,9 +2280,9 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001251:
   integrity sha512-I56jhWDGMtdILQORdusxBOH+Nl/KgQSdDmpJezYddnAkVOmnoU8zwjTV9xAjMIYxr0iPreEAVylCGcmHCjfaOw==
 
 caniuse-lite@^1.0.30001312:
-  version "1.0.30001312"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001312.tgz#e11eba4b87e24d22697dae05455d5aea28550d5f"
-  integrity sha512-Wiz1Psk2MEK0pX3rUzWaunLTZzqS2JYZFzNKqAiJGiuxIjRPLgV6+VDPOg6lQOUxmDwhTlh198JsTTi8Hzw6aQ==
+  version "1.0.30001314"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001314.tgz#65c7f9fb7e4594fca0a333bec1d8939662377596"
+  integrity sha512-0zaSO+TnCHtHJIbpLroX7nsD+vYuOVjl3uzFbJO1wMVbuveJA0RK2WcQA9ZUIOiO0/ArMiMgHJLxfEZhQiC0kw==
 
 canvas-confetti@^1.5.1:
   version "1.5.1"
