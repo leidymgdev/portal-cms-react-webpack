@@ -1237,10 +1237,10 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@jcgalvis/vtex.livestreaming@1.6.85-beta":
-  version "1.6.85-beta"
-  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.85-beta.tgz#55f867dca97f98c0b0694c24aa5ff49436747d64"
-  integrity sha512-GIeDHwgJj7LMAc/6YJeAE4QbcRzQbzsUzZDCOTRk22nk7zg0RiO+imcAWkfNuni+oYU1sGR7sPnma8qSHJBCMA==
+"@jcgalvis/vtex.livestreaming@1.6.86-beta":
+  version "1.6.86-beta"
+  resolved "https://registry.yarnpkg.com/@jcgalvis/vtex.livestreaming/-/vtex.livestreaming-1.6.86-beta.tgz#fcdf03d3211b3960ee3bdec0a56a6766bfa0d3e8"
+  integrity sha512-B8uf+8eyW43RqMmHlAFBjEz4Dfmlih5srpPRPBP+IpQgAIrmgBk1j9NKrbJQ33AzexI1tCsk7LI3zu0bDPOU7A==
   dependencies:
     "@giphy/js-types" "^4.1.0"
     "@lottiefiles/react-lottie-player" "^3.4.2"
