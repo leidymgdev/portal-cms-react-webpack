@@ -1,22 +1,22 @@
-import React from "react";
-import { Livestreaming } from "@jcgalvis/vtex.livestreaming";
-import "@jcgalvis/vtex.livestreaming/dist/index.css";
+import React from 'react';
+import { Livestreaming } from './livestreaming-deps';
 
 const windowInfo = window;
 const { vtexjs } = windowInfo;
 
 const LivestreamingPortal = () => {
-  const getProductsCace = async (collectionId) => {
+  const getProductsCace = async collectionId => {
     const url = `/api/catalog_system/pub/products/search?fq=productClusterIds:${collectionId}&_from=0&_to=49`;
 
     const response = await fetch(url);
     const data = await response.json();
 
     if (data && data.length > 0) {
-      const products = data.map((product) => {
-
-        const item = product?.items[0]
-        const seller = item?.sellers.find(seller => seller.sellerDefault === true)
+      const products = data.map(product => {
+        const item = product?.items[0];
+        const seller = item?.sellers.find(
+          seller => seller.sellerDefault === true,
+        );
 
         return {
           id: product.productId,
@@ -39,16 +39,17 @@ const LivestreamingPortal = () => {
     return null;
   };
 
-  const getProductByIdCace = async (productId) => {
+  const getProductByIdCace = async productId => {
     const url = `/api/catalog_system/pub/products/search?fq=productId:${productId}`;
 
     const response = await fetch(url);
     const data = await response.json();
 
     if (data && data.length > 0) {
-
-      const item = data[0]?.items[0]
-      const seller = item?.sellers.find(seller => seller.sellerDefault === true)
+      const item = data[0]?.items[0];
+      const seller = item?.sellers.find(
+        seller => seller.sellerDefault === true,
+      );
 
       const product = {
         id: data[0]?.productId,
@@ -71,11 +72,11 @@ const LivestreamingPortal = () => {
     return null;
   };
 
-  const addToCart = (product) => {
+  const addToCart = product => {
     var item = {
       id: product.skuId,
       quantity: 1,
-      seller: "1",
+      seller: '1',
     };
 
     return vtexjs.checkout.addToCart([item]);
