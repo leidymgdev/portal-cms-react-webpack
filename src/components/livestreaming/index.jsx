@@ -6,6 +6,22 @@ const windowInfo = window;
 const { vtexjs } = windowInfo;
 
 const LivestreamingPortal = () => {
+
+  const filterAvailableProducts = (product) => {
+    const filterItems = product?.items.filter((item) => {
+      const availableSellers = item.sellers.filter((seller) => seller.commertialOffer.IsAvailable)
+      return availableSellers.length > 0
+    })
+
+    const item = filterItems[0]
+    const seller = item?.sellers.find((seller) => seller.sellerDefault === true)
+
+    return {
+      item,
+      seller
+    }
+  }
+
   const getProductsCace = async (collectionId) => {
     const url = `/api/catalog_system/pub/products/search?fq=productClusterIds:${collectionId}&_from=0&_to=49`;
 
@@ -15,8 +31,8 @@ const LivestreamingPortal = () => {
     if (data && data.length > 0) {
       const products = data.map((product) => {
 
-        const item = product?.items[0]
-        const seller = item?.sellers.find(seller => seller.sellerDefault === true)
+        const result = filterAvailableProducts(product)
+        const { item, seller } = result
 
         return {
           id: product.productId,
@@ -47,8 +63,8 @@ const LivestreamingPortal = () => {
 
     if (data && data.length > 0) {
 
-      const item = data[0]?.items[0]
-      const seller = item?.sellers.find(seller => seller.sellerDefault === true)
+      const result = filterAvailableProducts(data[0])
+      const { item, seller } = result
 
       const product = {
         id: data[0]?.productId,
