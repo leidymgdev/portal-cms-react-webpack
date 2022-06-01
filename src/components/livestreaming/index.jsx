@@ -6,23 +6,32 @@ const windowInfo = window;
 const { vtexjs } = windowInfo;
 
 const LivestreamingPortal = () => {
-
   const filterAvailableProducts = (product) => {
-    const filterItems = product?.items.filter((item) => {
-      const availableSellers = item.sellers.filter((seller) => seller.commertialOffer.IsAvailable)
-      return availableSellers.length > 0
-    })
+    const availableItems = product?.items.filter((item) => {
+      const availableSellers = item.sellers.filter(
+        (seller) => seller.commertialOffer.IsAvailable
+      );
+      return availableSellers.length > 0;
+    });
 
-    const item = filterItems[0]
-    const seller = item?.sellers.find((seller) => seller.sellerDefault === true)
+    let item = availableItems[0];
+
+    if (!item) {
+      item = product?.items[0];
+    }
+
+    const seller = item?.sellers.find(
+      (seller) => seller.sellerDefault === true
+    );
 
     return {
       item,
-      seller
-    }
-  }
+      seller,
+      isAvailable: !!availableItems?.length,
+    };
+  };
 
-  const getProductsCace = async (collectionId) => {
+  const getProducts = async (collectionId) => {
     const url = `/api/catalog_system/pub/products/search?fq=productClusterIds:${collectionId}&_from=0&_to=49`;
 
     const response = await fetch(url);
@@ -30,9 +39,8 @@ const LivestreamingPortal = () => {
 
     if (data && data.length > 0) {
       const products = data.map((product) => {
-
-        const result = filterAvailableProducts(product)
-        const { item, seller } = result
+        const result = filterAvailableProducts(product);
+        const { item, seller, isAvailable } = result;
 
         return {
           id: product.productId,
@@ -41,9 +49,7 @@ const LivestreamingPortal = () => {
           price: seller?.commertialOffer.ListPrice,
           imageUrl: item?.images[0]?.imageUrl,
           addToCartLink: seller.addToCartLink,
-          isAvailable: product?.skuSpecifications
-            ? true
-            : seller?.commertialOffer.IsAvailable,
+          isAvailable,
           variationSelector: product?.skuSpecifications || [],
           pdpLink: product.link,
           skuId: item.itemId,
@@ -55,16 +61,15 @@ const LivestreamingPortal = () => {
     return null;
   };
 
-  const getProductByIdCace = async (productId) => {
+  const getProductById = async (productId) => {
     const url = `/api/catalog_system/pub/products/search?fq=productId:${productId}`;
 
     const response = await fetch(url);
     const data = await response.json();
 
     if (data && data.length > 0) {
-
-      const result = filterAvailableProducts(data[0])
-      const { item, seller } = result
+      const result = filterAvailableProducts(data[0]);
+      const { item, seller, isAvailable } = result;
 
       const product = {
         id: data[0]?.productId,
@@ -74,9 +79,7 @@ const LivestreamingPortal = () => {
         imageUrl: item?.images[0]?.imageUrl,
         addToCartLink: seller?.addToCartLink,
         items: data[0]?.items,
-        isAvailable: data[0]?.skuSpecifications
-          ? true
-          : seller?.commertialOffer.IsAvailable,
+        isAvailable,
         variationSelector: data[0]?.skuSpecifications,
         pdpLink: data[0]?.link,
       };
@@ -102,8 +105,8 @@ const LivestreamingPortal = () => {
       addToCart={addToCart}
       account="__ACCOUNT"
       environment="dev"
-      getProductId={getProductByIdCace}
-      getProducts={getProductsCace}
+      getProductId={getProductById}
+      getProducts={getProducts}
       idLivestreaming="__IDLIVESTREAMING"
       isInGlobalPage="_ISINGLOBALPAGE"
       isInfinite="_ISINFINITE"
