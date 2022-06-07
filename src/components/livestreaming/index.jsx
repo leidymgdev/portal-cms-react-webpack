@@ -104,7 +104,7 @@ const LivestreamingPortal = () => {
     <Livestreaming
       addToCart={addToCart}
       account="__ACCOUNT"
-      environment="dev"
+      environment="prod"
       getProductId={getProductById}
       getProducts={getProducts}
       idLivestreaming="__IDLIVESTREAMING"
