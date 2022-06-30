@@ -91,10 +91,11 @@ const LivestreamingPortal = () => {
   };
 
   const addToCart = (product) => {
-
     const result = filterAvailableProducts(product);
 
-    const { seller: { sellerId } } = result;
+    const {
+      seller: { sellerId },
+    } = result;
 
     var item = {
       id: product.skuId,
