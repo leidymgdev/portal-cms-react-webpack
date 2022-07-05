@@ -43,6 +43,7 @@ const LivestreamingPortal = () => {
         const { item, seller, isAvailable } = result;
 
         return {
+          ...product,
           id: product.productId,
           name: product?.productName,
           priceWithDiscount: seller?.commertialOffer.Price,
@@ -72,6 +73,7 @@ const LivestreamingPortal = () => {
       const { item, seller, isAvailable } = result;
 
       const product = {
+        ...product,
         id: data[0]?.productId,
         name: data[0]?.productName,
         priceWithDiscount: seller?.commertialOffer.Price,
